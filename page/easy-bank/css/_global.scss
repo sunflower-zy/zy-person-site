@@ -1,0 +1,51 @@
+// 样式初始化
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+// 公共样式提取
+// flex布局
+// .fr {
+//     display: flex;
+//     &-jc-sa {
+//         justify-content: space-around;
+//         align-items: center;
+//     }
+// }
+// .fc {
+//     display: flex;
+//     flex-direction: column;
+//     &-jc-sa {
+//         justify-content: space-around;
+//         align-items: center;
+//     }
+// }
+
+.req-button {
+    width: 200px;
+    line-height: 40px;
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, $LimeGreen, $BrightCyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+    &:hover {
+        opacity: 0.5;
+}
+}

@@ -1,0 +1,287 @@
+/* 样式初始化 */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+:root {
+    /* 背景 */
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    /* 渐变 */
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+}
+
+/* header部分 */
+header {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.link-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* intro 部分 */
+.intro {
+    text-align: center;
+    background: linear-gradient(180deg, #fff, var(--VeryLightGray));
+}
+
+.intro-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section-half {
+    padding: 0 3%;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+
+
+/* reason部分 */
+.reason {
+    background: var(--VeryLightGray);
+}
+
+/* last article 部分 */
+.last-article {}
+
+/* footer 部分 */
+
+footer {
+    background-color: var(--DarkBlue);
+    color: #eee;
+    display: flex;
+}
+
+.req-button {
+    border-radius: 15% /50%;
+    background-image: linear-gradient(135deg, var(--LimeGreen), var(--BrightCyan));
+    width: 164px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+/* 移动端样式 */
+@media (min-width:320px) {
+
+    /* 样式提取 */
+    .description {
+        text-align: center;
+        color: #aaa;
+        font-size: 0.5rem;
+        margin: 1.5rem auto;
+        line-height: 1.2rem;
+    }
+
+    /* head 部分 */
+    .nav-box {
+        display: none;
+    }
+
+    .head-req {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    /* intro 部分 */
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .intro-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-description h2 {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .intro-description .req-button {
+        margin-bottom: 2rem;
+    }
+
+    .intro-img {
+        height: 50vh;
+        background-image: url('../images/image-mockups.png'), url('../images//bg-intro-mobile.svg');
+        background-size: cover;
+        background-position: bottom 0 right 0;
+    }
+}
+
+/* reason 部分 */
+.reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.reason-title {
+    text-align: center;
+}
+
+.reason-title h2 {}
+
+.reason-title p {
+    color: #888;
+}
+
+.reason-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reason-item img {
+    margin: 1rem auto;
+}
+
+/* last-article 部分 */
+
+.last-article {
+    padding: 0 3%;
+}
+
+.latest-title {
+    text-align: center;
+    margin: 5rem auto 3rem;
+
+}
+
+.article-item {
+    text-align: left;
+}
+
+.article-item img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.article-item p {
+    padding: 0 1.5rem;
+}
+
+.article-author {
+    color: #aaa;
+    font-size: 0.3rem;
+    margin: 1rem 0 0.2rem 0;
+}
+
+.article-title {
+    color: #555;
+
+}
+
+.article-item .description {
+    text-align: left;
+    margin-top: 0.3rem;
+}
+
+/* footer 部分 */
+footer {
+    height: 75vh;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+}
+
+.link-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    width: 70%;
+}
+
+.link-ul a {
+    text-align: center;
+    color: #aaa;
+}
+
+.link-ul {
+    text-align: center;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-end {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* pad端 */
+@media(min-width:768px) {}
+
+
+/* 笔记本 */
+@media(min-width:1024px) {}
+
+/* PC端 */
+@media(min-width:1440px) {}
+
+/* 4K */
+@media(min-width:2560px) {}

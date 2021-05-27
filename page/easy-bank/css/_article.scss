@@ -1,0 +1,110 @@
+// 手机端
+@media screen and (max-width: 768px) {
+    .article {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .articles-title {
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 300;
+        }
+        .article-list {
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .article-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+                width: 90%;
+                height: 200px;
+                border-radius: 3% 3% 0 0;
+                margin-bottom: 13px;
+            }
+            .article-title {
+                width: 80%;
+                color: $DarkBlue;
+                font-size: 17px;
+                margin-bottom: 13px;
+                &:hover {
+                    color: $BrightCyan;
+                }
+            }
+            .article-author {
+                width: 80%;
+                color: $GrayishBlue;
+                font-size: 10px;
+                margin-bottom: 13px;
+            }
+            .description {
+                width: 80%;
+                color: $GrayishBlue;
+                font-size: 13px;
+            }
+        }
+    }
+}
+// Pad 端
+@media screen and(min-width:768px) {
+}
+// PC端
+@media screen and (min-width: 1024px) {
+    .article {
+        width: 90%;
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .articles-title {
+            height: 30%;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 300;
+        }
+        .article-list {
+            height: 70%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .article-item {
+            width: 22%;
+
+            img {
+                width: 100%;
+                height: 200px;
+                border-radius: 6% 6% 0 0;
+                margin-bottom: 13px;
+            }
+            .article-title {
+                color: $DarkBlue;
+                font-size: 17px;
+                margin-bottom: 13px;
+                &:hover {
+                    color: $BrightCyan;
+                }
+            }
+            .article-author {
+                color: $GrayishBlue;
+                font-size: 10px;
+                margin-bottom: 13px;
+            }
+            .description {
+                color: $GrayishBlue;
+                font-size: 13px;
+            }
+        }
+    }
+}

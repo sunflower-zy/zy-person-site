@@ -1,0 +1,102 @@
+// 手机端
+@media screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        .hero-description {
+            height: 55vh;
+            width: 80%;
+            margin: auto;
+            .description-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    font-size: 25px;
+                    font-weight: 320;
+                    margin-bottom: 10px;
+                    color: $DarkBlue;
+                }
+                .description {
+                    color: $GrayishBlue;
+                    font-weight: 300;
+                    color: $GrayishBlue;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .hero-img {
+            position: relative;
+            width: 100%;
+            height: 45vh;
+            .hero-bg-img {
+                z-index: -1;
+                position: absolute;
+                top: -20%;
+                left: 0;
+                width: 100%;
+
+            }
+            .hero-cover-img {
+                position: absolute;
+                width: 100%;
+                
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+// Pad 端
+@media screen and(min-width:768px) {
+}
+// PC端
+@media screen and (min-width: 1024px) {
+    .hero {
+        display: flex;
+        text-align: left;
+        height: 92vh;
+        .hero-description {
+            width: 40%;
+            padding: 15% 5%;
+
+            .description-box {
+                margin: auto;
+
+                h2 {
+                    font-size: 55px;
+                    font-weight: 320;
+                    margin-bottom: 10px;
+                    color: $DarkBlue;
+                }
+                .description {
+                    color: $GrayishBlue;
+                    font-weight: 300;
+                    color: $GrayishBlue;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .hero-img {
+            position: relative;
+            width: 60%;
+            height: 100%;
+            .hero-bg-img {
+                z-index: -1;
+                position: absolute;
+                top: -20%;
+                left: 0;
+                width: 100%;
+            }
+            .hero-cover-img {
+                position: absolute;
+                width: 80%;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// header头部样式
+.header {
+    background-color: #fff;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            height: 100%;
+            margin: 0 10px;
+            &:hover {
+                border-bottom: 3px solid $BrightCyan;
+            }
+        }
+    }
+}
+
+// 手机端
+@media screen and (max-width: 768px) {
+    .header {
+        margin: 0 -15%;
+        .nav-box {
+            display: none;
+        }
+        .head-req {
+            display: none;
+        }
+    }
+}
+// Pad 端
+@media screen and(min-width:768px) {
+    .head-req {
+        display: none;
+    }
+    .menu-button {
+        display: none;
+    }
+}
+// PC端
+@media screen and (min-width: 1024px) {
+    .header {
+        .head-req {
+            text-align: center;
+            display: inline-block;
+        }
+    }
+}
